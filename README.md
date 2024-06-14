@@ -1,53 +1,50 @@
-# Node.js Docker Application
+# Application Node.js avec Docker
 
 ## Description
 
-This project demonstrates how to containerize a simple Node.js application using Docker. The application uses Express.js to serve a "Hello World" message.
+Ce projet montre comment mettre en conteneur une application Node.js simple en utilisant Docker. L'application utilise Express.js pour afficher un message "Hello World".
 
-## Prerequisites
+## Prérequis
 
-- Docker installed on your machine
-- Node.js installed on your machine (for local development)
+- Docker installé sur votre machine
+- Node.js installé sur votre machine (pour le développement local)
 
-## Setup
+## Installation
 
-1. Clone the repository:
+1. Clonez le repository :
     ```sh
-    git clone https://github.com/your-username/node-docker-app.git
+    git clone https://github.com/votre-nom-utilisateur/node-docker-app.git
     cd node-docker-app
     ```
 
-2. Build the Docker image:
+2. Construisez l'image Docker :
     ```sh
     docker build -t node-docker-app .
     ```
 
-3. Run the Docker container:
+3. Exécutez le conteneur Docker :
     ```sh
     docker run -p 3000:3000 node-docker-app
     ```
 
-4. Access the application in your browser at `http://localhost:3000`.
+4. Accédez à l'application dans votre navigateur à l'adresse `http://localhost:3000`.
 
-## Using Docker Compose
+## Utilisation de Docker Compose
 
-Alternatively, you can use Docker Compose to build and run the application:
+Vous pouvez aussi utiliser Docker Compose pour construire et exécuter l'application :
 
-1. Start the application using Docker Compose:
+1. Démarrez l'application avec Docker Compose :
     ```sh
     docker-compose up
     ```
 
-2. Access the application in your browser at `http://localhost:3000`.
+2. Accédez à l'application dans votre navigateur à l'adresse `http://localhost:3000`.
 
-## Project Structure
+## Structure du projet
 
-- `app.js`: The main application file
-- `package.json`: Project metadata and dependencies
-- `Dockerfile`: Instructions to build the Docker image
-- `docker-compose.yml`: Docker Compose configuration file
-- `.dockerignore`: Specifies files and directories to be ignored in the Docker build
+- `app.js` : Le fichier principal de l'application
+- `package.json` : Métadonnées et dépendances du projet
+- `Dockerfile` : Instructions pour construire l'image Docker
+- `docker-compose.yml` : Fichier de configuration pour Docker Compose
+- `.dockerignore` : Fichiers et répertoires à ignorer lors de la construction de l'image Docker
 
-## License
-
-This project is licensed under the MIT License.
